@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link ref="stylesheet" href="./style.css" type="text/css">
-     <style>
-     body
-     {
-     background-color: blue;
-      }
-
-     .navbar
-     {
-       display: inline-block;
-       font-size:60px;
-       padding: 10px;
-     }
-     .icon
-     {
-       height: 8%;
-       width: 8%;
-     }
-     .grid-container
-     {
-       display:grid;
-       grid-template-columns: 1fr 1fr;
-       grid-gap: 20px;
-     }
-     .thumbnail
-     {
-       display:block;
-       margin:2%;
-     }
-    </style>
-
+    <title>Embed Video Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   </head>
 
   <body>
-
     <nav class="navbar">
-          <img class="icon" src=icon.png>
-          <a>Home</a>
-          <a>Trending</a>
-          <a>Help</a>
-          <a >About</a>
+      <div class="navElement">
+        <img class="icon" src=youtube-icon.png>
+      </div>
+      <div class="navElement">
+        <form id="search" action="submit">
+          <input type="text">
+          <button><i class="fas fa-search"></i></button>
+        </form>   
+      </div> 
+      </div>
+        <div class="navElement">
+          <div class="notification">
+            <i class="fas fa-upload"></i>
+          </div>
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+          </div>
+          <div class="notification">
+            <i class="far fa-user-circle"></i>
+          </div>
+        </div>
     </nav>
 
     <section class="grid-container">
-
       <section class="mainvideo">
         <iframe width="560" height="315"
         src="https://www.youtube.com/embed/lJIrF4YjHfQ"
         frameborder="0"
         allow="picture-in-picture"
         allowfullscreen></iframe>
+        <section>
+          <h3>
+            Embed Videos and Playlists
+          </h3>
+          <span class="left">Number of views: 5400</span>
+        </section>
       </section>
 
       <aside class="sidebar">
