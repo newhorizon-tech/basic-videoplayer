@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link ref="stylesheet" href="./style.css" type="text/css">
+     <style>
+     body
+     {
+     background-color: blue;
+      }
+
+     .navbar
+     {
+       display: inline-block;
+       font-size:60px;
+       padding: 10px;
+     }
+     .icon
+     {
+       height: 8%;
+       width: 8%;
+     }
+     .grid-container
+     {
+       display:grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 20px;
+     }
+     .thumbnail
+     {
+       display:block;
+       margin:2%;
+     }
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+          <img class="icon" src=icon.png>
+          <a>Home</a>
+          <a>Trending</a>
+          <a>Help</a>
+          <a >About</a>
+    </nav>
+
+    <section class="grid-container">
+
+      <section class="mainvideo">
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/lJIrF4YjHfQ"
+        frameborder="0"
+        allow="picture-in-picture"
+        allowfullscreen></iframe>
+      </section>
+
+      <aside class="sidebar">
+        <section>
+        <img class="thumbnail" src=icon.png> Video 1. Descriptions
+        </section>
+        <img class="thumbnail" src=icon.png>
+        <img class="thumbnail" src=icon.png>
+      </section>
+    </section>
+
+  </body>
+  </html>
