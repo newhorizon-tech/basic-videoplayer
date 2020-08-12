@@ -14,21 +14,20 @@ input {
 	margin: auto;
 }
 i {
-	color:#606060;
-
+	color: #606060;
 }
-.grid-container	{
-	padding-top:5rem;
-	padding-left:1.5rem;
+.grid-container {
+	padding-top: 5rem;
+	padding-left: 1.5rem;
 }
 
 .navbar {
-	background-color:white;
+	background-color: white;
 	display: flex;
 	font-size: 30px;
 	justify-content: space-between;
-	position:fixed;
-	width:100%;
+	position: fixed;
+	width: 100%;
 }
 
 .navElement {
@@ -36,7 +35,7 @@ i {
 	padding: 5px;
 }
 
-.icon {
+.logo {
 	height: 3rem;
 	padding-left: 1rem;
 }
@@ -51,8 +50,50 @@ i {
 }
 
 .notification {
-	padding-top: 0.25rem;
+	/* padding-top: 0.25rem; */
+	display: flex;
 	padding-right: 1.5rem;
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 1px solid #aaa;
+	border-right: none;
+	padding: 5px 5px 5px 15px;
+	height: 20px;
+	border-radius: 2px 0 0 2px;
+}
+
+.searchTerm:focus {
+	color: #141414;
+}
+
+.searchButton {
+	width: 75px;
+	height: 32px;
+	border: 1px solid #aaa;
+	background: #eee;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 1px 1px 0;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.wrap {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #search {
@@ -60,5 +101,9 @@ i {
 }
 
 #hamburger {
- padding-top: 0.82rem;
+	/* padding-top: 0.82rem; */
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	padding-left: 1rem;
 }

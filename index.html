@@ -13,27 +13,35 @@
     <nav class="navbar">
       <div class="navElement">
         <i id="hamburger" class="material-icons">menu</i>
-        <img class="icon" src=youtube-icon.png>
+        <img class="logo" src=youtube-icon.png>
       </div>
       <div class="navElement">
-        <form id="search" action="submit">
+        <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="Search">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+       </div>
+        <!-- <form id="search" action="submit">
           <input type="text">
           <button><i class="fas fa-search"></i></button>
-        </form>
+        </form> -->
       </div>
       </div>
         <div class="navElement">
           <div class="notification">
-            <i class="fas fa-upload"></i>
+            <i id="upload-icon" class="fas fa-upload"></i>
           </div>
           <div class="notification">
-          <i class="material-icons">apps</i>
+            <i id="apps-icon" class="material-icons">apps</i>
           </div>
           <div class="notification">
-            <i class="fas fa-bell"></i>
+            <i id="notification-icon" class="fas fa-bell"></i>
           </div>
           <div class="notification">
-            <i class="far fa-user-circle"></i>
+            <i id="user-icon" class="far fa-user-circle"></i>
           </div>
         </div>
     </nav>
