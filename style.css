@@ -2,6 +2,7 @@ body {
 	box-sizing: content-box;
 	margin: 0;
 	background-color: whitesmoke;
+	font-family: sans-serif;
 }
 
 i {
@@ -14,9 +15,7 @@ iframe {
 	background: red;
 }
 
-#videotitle {
-	font-size=50px;
-}
+
 
 .grid-container {
 	width: auto;
@@ -28,12 +27,36 @@ iframe {
 }
 
 .small-grid {
+	top:0
 	width: auto;
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 3.5fr 1fr;
 }
 
+#videotitle {
+	font-size: 30px;
+	margin-bottom: 1rem;
+}
+
+.description {
+	padding-top: 48%;
+	font-size: 20px;
+}
+
+#account_icon {
+	display: grid;
+	font-size:60px;
+	grid-template-columns: 1;
+	align-content: center;
+	justify-content: center;
+}
+.account {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-gap:0;
+
+}
 
 .mainvideo {
 	position: relative;
@@ -49,10 +72,7 @@ iframe {
 	margin-left: 0;
 	margin-top: 0;
 }
-.description {
-	padding-top: 52%;
-	font-size: 25px;
-}
+
 
 
 .navbar {
