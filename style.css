@@ -13,12 +13,22 @@ input {
 	width: 80%;
 	margin: auto;
 }
+i {
+	color:#606060;
+
+}
+.grid-container	{
+	padding-top:5rem;
+	padding-left:1.5rem;
+}
 
 .navbar {
 	background-color:white;
 	display: flex;
 	font-size: 30px;
 	justify-content: space-between;
+	position:fixed;
+	width:100%;
 }
 
 .navElement {
@@ -47,4 +57,8 @@ input {
 
 #search {
 	width: 30rem;
+}
+
+#hamburger {
+ padding-top: 0.82rem;
 }
