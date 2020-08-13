@@ -8,7 +8,6 @@ A project to embed a youtube video onto an HTML page and replicate elements of t
 
 It includes a embedded youtube video as well as a search bar. It also a sidebar that tries to replicate the look of the youtube sidebar.
 
-Implemented
 
 ## Built With
 
