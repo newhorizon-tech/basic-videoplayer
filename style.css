@@ -2,7 +2,7 @@ body {
 	box-sizing: content-box;
 	margin: 0;
 	background-color: whitesmoke;
-	font-family: sans-serif;
+	font-family:sans-serif;
 }
 
 i {
@@ -13,6 +13,7 @@ iframe {
 	width: 100vw;
 	height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */
 	background: red;
+	border:0;
 }
 .side-flex {
 	display: flex;
@@ -27,6 +28,23 @@ iframe {
 
 }
 
+.side-title{
+	font-weight: 600;
+	margin:0;
+	font-size:0.8rem;
+}
+
+.side-description{
+		color:rgb(56, 55, 55);
+		margin:4px 0 0 0;
+		font-size:0.8rem;
+}
+
+.side-combo {
+	margin:2%;
+
+}
+
 .views {
 	color: rgb(56, 55, 55);
 }
@@ -37,7 +55,7 @@ iframe {
 	justify-content: flex-end;
 }
 
-#suscribe-button {
+#subscribe-button {
 	background-color: rgb(199, 41, 41);
 	color: white;
 	border: none;
@@ -78,7 +96,6 @@ iframe {
 #account_icon {
 	display: grid;
 	font-size: 60px;
-	grid-template-columns: 1;
 	align-content: center;
 	justify-content: center;
 }

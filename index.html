@@ -1,121 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Embed Video Project</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  </head>
+<html lang="en">
 
-  <body>
-    <nav class="navbar">
-      <div class="navElement">
-        <i id="hamburger" class="material-icons">menu</i>
-        <img class="logo" src=youtube-icon.png>
-      </div>
-      <div class="navElement">
-        <div class="wrap">
-          <div class="search">
-             <input type="text" class="searchTerm" placeholder="Search">
-             <button type="submit" class="searchButton">
-               <i class="fa fa-search"></i>
-            </button>
-          </div>
-       </div>
-      </div>
-        <div class="navElement">
-          <div class="notification">
-            <i id="upload-icon" class="fas fa-upload"></i>
-          </div>
-          <div class="notification">
-            <i id="apps-icon" class="material-icons">apps</i>
-          </div>
-          <div class="notification">
-            <i id="notification-icon" class="fas fa-bell"></i>
-          </div>
-          <div class="notification">
-            <i id="user-icon" class="far fa-user-circle"></i>
-          </div>
+<head>
+  <title>Custom Video Player - Youtube Replica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navElement">
+      <i id="hamburger" class="material-icons">menu</i>
+      <img class="logo" src=youtube-icon.png>
+    </div>
+    <div class="navElement">
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="Search">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
-    </nav>
-
-    <section class="grid-container">
-      <section class="mainvideo">
-          <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/lJIrF4YjHfQ"
-          allow="picture-in-picture"
-          frameborder=false
-          allowfullscreen></iframe>
-
-          <section class="description">
-              <h1 id="videotitle">
-                Embed Videos and Playlists
-              </h1>
-              <section  class="small-grid">
-                  <section  class= "views">
-                    245,123 views • January 2020
-                  </section>
-                  <section class="social">
-                    <i class="material-icons">thumb_up</i>
-                    <span class="social-icon">5.6K</span>
-                    <i class="material-icons">thumb_down</i>
-                    <span class="social-icon">333</span>
-                    <i class="material-icons">share</i>
-                    <span class="social-icon">SHARE</span>
-                  </section>
-                  <!-- <hr> -->
-                  <section class="account">
-                    <i id="account_icon" class="material-icons">account_circle</i>
-                    <p> <b>Youtube Account</b> <br> 1m subscribers</p>
-                  </section>
-                  <section class="subscribe">
-                    <button id="suscribe-button">Suscribe</button>
-                  </section>
-             </section>
-           </section>
-         </section>
-         <aside class="sidebar">
-
-       <section class="side-flex">
-         <section class="thumb">
-           <img class="thumbnail" src="thumbnail-1.jpg">
-           <div>
-             <p>Customer Service Sample Call - Product Refund</p>
-             <p>Magellan Solutions</p>
-             <p>1,114,767 views • 4 Dec 2018</p>
-           </div>
-         </section>
-         <section class="thumb">
-           <img class="thumbnail" src="thumbnail-2.jpg">
-           <div>
-             <p>Liam Dutton nails pronounciation</p>
-             <p>Channel 4</p>
-             <p>32,467,887 views • 9 Sep 2015</p>
-           </div>
-         </section>
-         <section class="thumb">
-           <img class="thumbnail" src="thumbnail-3.jpg">
-           <div>
-             <p>Four Seasons ~ Vivaldi</p>
-             <p>AnAmericanComposer</p>
-             <p>217,343,986 views • 30 Jan 2011</p>
-           </div>
-         </section>
-         <section class="thumb">
-           <img class="thumbnail" src="thumbnail-4.jpg">
-           <div>
-             <p>This is what happens when you reply to spam email</p>
-             <p>TED</p>
-             <p>53,675,487 views • 1 Feb 2016</p>
-           </div>
-         </section>
-
-       </section>
-
-   </aside>
+      </div>
+    </div>
+    <div class="navElement">
+      <div class="notification">
+        <i id="upload-icon" class="fas fa-upload"></i>
+      </div>
+      <div class="notification">
+        <i id="apps-icon" class="material-icons">apps</i>
+      </div>
+      <div class="notification">
+        <i id="notification-icon" class="fas fa-bell"></i>
+      </div>
+      <div class="notification">
+        <i id="user-icon" class="far fa-user-circle"></i>
+      </div>
+    </div>
+  </nav>
+  <section class="grid-container">
+    <section class="mainvideo">
+      <iframe src="https://www.youtube.com/embed/lJIrF4YjHfQ" allow="picture-in-picture" allowfullscreen></iframe>
+      <section class="description">
+        <h1 id="videotitle">
+          Embed Videos and Playlists
+        </h1>
+        <section class="small-grid">
+          <section class="views">
+            245,123 views • January 2020
+          </section>
+          <section class="social">
+            <i class="material-icons">thumb_up</i>
+            <span class="social-icon">5.6K</span>
+            <i class="material-icons">thumb_down</i>
+            <span class="social-icon">333</span>
+            <i class="material-icons">share</i>
+            <span class="social-icon">SHARE</span>
+          </section>
+          <section class="account">
+            <i id="account_icon" class="material-icons">account_circle</i>
+            <p> <b>Youtube Account</b> <br> 1m subscribers</p>
+          </section>
+          <section class="subscribe">
+            <button id="subscribe-button">Subscribe</button>
+          </section>
+        </section>
+      </section>
     </section>
+    <aside class="sidebar">
+      <section class="side-flex">
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-1.jpg">
+          <div class="side-combo">
+            <p class="side-title">Customer Service Sample Call</p>
+            <p class="side-description">Magellan Solutions</p>
+            <p class="side-description">1,114,767 views • 4 Dec 2018</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-2.jpg">
+          <div class="side-combo">
+            <p class="side-title">Liam Dutton nails pronounciation</p>
+            <p class="side-description">Channel 4</p>
+            <p class="side-description">32,467,887 views • 9 Sep 2015</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-3.jpg">
+          <div class="side-combo">
+            <p class="side-title">Four Seasons ~ Vivaldi</p>
+            <p class="side-description">AnAmericanComposer</p>
+            <p class="side-description">217,343,986 views • 30 Jan 2011</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-4.jpg">
+          <div class="side-combo">
+            <p class="side-title">What happens when you reply to spam</p>
+            <p class="side-description">TED</p>
+            <p class="side-description">53,675,487 views • 1 Feb 2016</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-3.jpg">
+          <div class="side-combo">
+            <p class="side-title">Four Seasons ~ Vivaldi</p>
+            <p class="side-description">AnAmericanComposer</p>
+            <p class="side-description">217,343,986 views • 30 Jan 2011</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-4.jpg">
+          <div class="side-combo">
+            <p class="side-title">What happens when you reply to spam</p>
+            <p class="side-description">TED</p>
+            <p class="side-description">53,675,487 views • 1 Feb 2016</p>
+          </div>
+        </section>
+        <section class="thumb">
+          <img class="thumbnail" src="thumbnail-1.jpg">
+          <div class="side-combo">
+            <p class="side-title">Customer Service Sample Call</p>
+            <p class="side-description">Magellan Solutions</p>
+            <p class="side-description">1,114,767 views • 4 Dec 2018</p>
+          </div>
+        </section>
+      </section>
+    </aside>
+  </section>
+</body>
 
-  </body>
 </html>
