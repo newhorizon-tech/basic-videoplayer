@@ -1,12 +1,12 @@
 body {
-	box-sizing: content-box;
+  box-sizing: content-box;
 	margin: 0;
-	background-color: whitesmoke;
+  background-color: whitesmoke;
 	font-family: sans-serif;
 }
 
-.flex,
-#hamburger {
+#hamburger,
+.flex {
 	display: flex;
 }
 
@@ -39,7 +39,7 @@ iframe {
 
 .side-description {
 	color: rgb(56, 55, 55);
-	margin: 4px 0 0 0;
+	margin: 4px 0 0;
 	font-size: 0.8rem;
 }
 
