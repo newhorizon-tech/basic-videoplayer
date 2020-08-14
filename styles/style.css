@@ -1,216 +1,213 @@
 body {
-	box-sizing: content-box;
-	margin: 0;
-	background-color: whitesmoke;
-	font-family:sans-serif;
+  box-sizing: content-box;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: sans-serif;
 }
 
 .flex, #hamburger {
   display: flex;
 }
 
-
 i {
-	color: #606060;
+  color: #606060;
 }
 
 iframe {
-	width: 100vw;
-	height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */
-	background: red;
-	border:0;
+  width: 100vw;
+  height: 56.25vw;
+  background: red;
+  border: 0;
 }
+
 .side-flex {
-	flex-direction: column;
+  flex-direction: column;
 }
 
-.thumb{
-	flex-direction: row;
-	height:auto;
-	word-wrap: break-word;
-
+.thumb {
+  flex-direction: row;
+  height: auto;
+  word-wrap: break-word;
 }
 
-.side-title{
-	font-weight: 600;
-	margin:0;
-	font-size:0.8rem;
+.side-title {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.8rem;
 }
 
-.side-description{
-		color:rgb(56, 55, 55);
-		margin:4px 0 0 0;
-		font-size:0.8rem;
+.side-description {
+  color: rgb(56, 55, 55);
+  margin: 4px 0 0 0;
+  font-size: 0.8rem;
 }
 
 .side-combo {
-	margin:2%;
-
+  margin: 2%;
 }
 
 .views {
-	color: rgb(56, 55, 55);
+  color: rgb(56, 55, 55);
 }
 
 .subscribe {
-	align-items: center;
-	justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #subscribe-button {
-	background-color: rgb(199, 41, 41);
-	color: white;
-	border: none;
-	border-radius: 3px;
-	height: 2.4rem;
-	width: 7rem;
-	text-transform: uppercase;
-	font-family: sans-serif;
+  background-color: rgb(199, 41, 41);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 2.4rem;
+  width: 7rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 .grid-container {
-	width: 96%;
-	padding-top: 5rem;
-	padding-left: 1.5rem;
-	display: grid;
-	grid-template-columns: 66% 34%;
-	grid-gap: 1.2rem;
+  width: 96%;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-gap: 1.2rem;
 }
 
 .small-grid {
-	top: 0;
-	width: auto;
-	display: grid;
-	grid-gap: 0.5rem .1rem;
-	grid-template-columns: 1.4fr 1fr;
+  top: 0;
+  width: auto;
+  display: grid;
+  grid-gap: 0.5rem .1rem;
+  grid-template-columns: 1.4fr 1fr;
 }
 
 #videotitle {
-	font-size: 30px;
-	margin-bottom: 1rem;
+  font-size: 30px;
+  margin-bottom: 1rem;
 }
 
 .description {
-	padding-top: 54%;
-	font-size: 20px;
+  padding-top: 54%;
+  font-size: 20px;
 }
 
 #account_icon {
-	display: grid;
-	font-size: 60px;
-	align-content: center;
-	justify-content: center;
+  display: grid;
+  font-size: 60px;
+  align-content: center;
+  justify-content: center;
 }
+
 .account {
-	display: grid;
-	grid-template-columns: 1fr 5fr;
-	grid-gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 0;
 }
 
 .social {
-	color: #606060;
-	font-size: 1rem;
-	align-items: center;
-	justify-content: flex-end;
+  color: #606060;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .social-icon {
-	padding-right: 0.8rem;
-	padding-left: 0.4rem;
+  padding-right: 0.8rem;
+  padding-left: 0.4rem;
 }
 
 .mainvideo {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-bottom: 56%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
 }
 
 .mainvideo iframe {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin-left: 0;
-	margin-top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .navbar {
-	background-color: white;
-	font-size: 30px;
-	justify-content: space-between;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
+  background-color: white;
+  font-size: 30px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .navElement {
-	padding: 5px;
+  padding: 5px;
 }
 
 .logo {
-	height: 3rem;
-	padding-left: 1rem;
+  height: 3rem;
+  padding-left: 1rem;
 }
 
 .thumbnail {
-	margin: 2%;
-	max-width: 10rem;
-	height:56%;
-	width:100%;
+  margin: 2%;
+  max-width: 10rem;
+  height: 56%;
+  width: 100%;
 }
 
 .notification {
-	/* padding-top: 0.25rem; */
-	padding-right: 1.5rem;
-	font-size: 1.2rem;
-	align-items: center;
+  padding-right: 1.5rem;
+  font-size: 1.2rem;
+  align-items: center;
 }
 
 .search {
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .searchTerm {
-	width: 100%;
-	border: 1px solid #aaa;
-	border-right: none;
-	padding: 5px 5px 5px 15px;
-	height: 20px;
-	border-radius: 2px 0 0 2px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-right: none;
+  padding: 5px 5px 5px 15px;
+  height: 20px;
+  border-radius: 2px 0 0 2px;
 }
 
 .searchTerm:focus {
-	color: #141414;
+  color: #141414;
 }
 
 .searchButton {
-	width: 75px;
-	height: 32px;
-	border: 1px solid #aaa;
-	background: #eee;
-	text-align: center;
-	color: #fff;
-	border-radius: 0 1px 1px 0;
-	cursor: pointer;
-	font-size: 15px;
+  width: 75px;
+  height: 32px;
+  border: 1px solid #aaa;
+  background: #eee;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 1px 1px 0;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .wrap {
-	width: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #search {
-	width: 30rem;
+  width: 30rem;
 }
 
 #hamburger {
-	/* padding-top: 0.82rem; */
-	align-items: center;
-	font-size: 1.5rem;
-	padding-left: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-left: 1rem;
 }
