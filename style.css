@@ -5,6 +5,11 @@ body {
 	font-family:sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+
 i {
 	color: #606060;
 }
@@ -16,12 +21,10 @@ iframe {
 	border:0;
 }
 .side-flex {
-	display: flex;
 	flex-direction: column;
 }
 
 .thumb{
-	display:flex;
 	flex-direction: row;
 	height:auto;
 	word-wrap: break-word;
@@ -50,7 +53,6 @@ iframe {
 }
 
 .subscribe {
-	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 }
@@ -108,7 +110,6 @@ iframe {
 .social {
 	color: #606060;
 	font-size: 1rem;
-	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 }
@@ -135,7 +136,6 @@ iframe {
 
 .navbar {
 	background-color: white;
-	display: flex;
 	font-size: 30px;
 	justify-content: space-between;
 	position: fixed;
@@ -144,7 +144,6 @@ iframe {
 }
 
 .navElement {
-	display: flex;
 	padding: 5px;
 }
 
@@ -154,7 +153,6 @@ iframe {
 }
 
 .thumbnail {
-	display: flex;
 	margin: 2%;
 	max-width: 10rem;
 	height:56%;
@@ -163,7 +161,6 @@ iframe {
 
 .notification {
 	/* padding-top: 0.25rem; */
-	display: flex;
 	padding-right: 1.5rem;
 	font-size: 1.2rem;
 	align-items: center;
@@ -172,7 +169,6 @@ iframe {
 .search {
 	width: 100%;
 	position: relative;
-	display: flex;
 }
 
 .searchTerm {
@@ -214,7 +210,6 @@ iframe {
 
 #hamburger {
 	/* padding-top: 0.82rem; */
-	display: flex;
 	align-items: center;
 	font-size: 1.5rem;
 	padding-left: 1rem;
