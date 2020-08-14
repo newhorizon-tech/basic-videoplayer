@@ -80,7 +80,7 @@ iframe {
 	top: 0;
 	width: auto;
 	display: grid;
-	grid-gap: 0.5rem .1rem;
+	grid-gap: 0.5rem 0.1rem;
 	grid-template-columns: 1.4fr 1fr;
 }
 
@@ -108,7 +108,7 @@ iframe {
 
 #account-subscribers {
 	color: rgb(56, 55, 55);
-	font-size: .95rem;
+	font-size: 0.95rem;
 }
 
 .account {
@@ -239,15 +239,15 @@ iframe {
 }
 
 #sort-by {
-	font-size: .9rem;
-	padding-left: .5rem;
+	font-size: 0.9rem;
+	padding-left: 0.5rem;
 }
 
 .like-comment {
 	justify-content: flex-start;
 	padding-top: 1rem;
 	color: #606060;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	align-items: center;
 }
 
@@ -266,13 +266,13 @@ iframe {
 
 .comment-replies {
 	align-items: center;
-	padding-top: .8rem;
+	padding-top: 0.8rem;
 	color: blue !important;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	margin-left: -6px;
 }
 
 .drop-down-icon {
-	padding-right: .5rem;
+	padding-right: 0.5rem;
 	color: blue;
 }
