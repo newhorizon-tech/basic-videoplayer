@@ -4,11 +4,13 @@ body {
   background-color: whitesmoke;
   font-family: sans-serif;
 }
-figure{
-  margin:0;
+
+figure {
+  margin: 0;
 }
 
-#hamburger,.flex {
+#hamburger,
+.flex {
   display: flex;
 }
 
@@ -53,7 +55,7 @@ iframe {
   color: rgb(56, 55, 55);
   font-size: 1rem;
   font-weight: normal;
-  margin:0;
+  margin: 0;
 }
 
 .subscribe {
