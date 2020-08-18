@@ -1,67 +1,210 @@
 <!DOCTYPE html>
-<html>
-  <head>
-     <link ref="stylesheet" href="./style.css" type="text/css">
-     <style>
-     body
-     {
-     background-color: blue;
-      }
+<html lang="en">
 
-     .navbar
-     {
-       display: inline-block;
-       font-size:60px;
-       padding: 10px;
-     }
-     .icon
-     {
-       height: 8%;
-       width: 8%;
-     }
-     .grid-container
-     {
-       display:grid;
-       grid-template-columns: 1fr 1fr;
-       grid-gap: 20px;
-     }
-     .thumbnail
-     {
-       display:block;
-       margin:2%;
-     }
-    </style>
+<head>
+  <title>Custom Video Player - Youtube Replica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
 
-  </head>
-
-  <body>
-
-    <nav class="navbar">
-          <img class="icon" src=icon.png>
-          <a>Home</a>
-          <a>Trending</a>
-          <a>Help</a>
-          <a >About</a>
-    </nav>
-
-    <section class="grid-container">
-
-      <section class="mainvideo">
-        <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/lJIrF4YjHfQ"
-        frameborder="0"
-        allow="picture-in-picture"
-        allowfullscreen></iframe>
-      </section>
-
-      <aside class="sidebar">
-        <section>
-        <img class="thumbnail" src=icon.png> Video 1. Descriptions
+<body>
+  <header>
+  <nav class="navbar flex">
+    <div class="navElement flex">
+      <i id="hamburger" class="material-icons">menu</i>
+      <img class="logo" src="img/youtube-icon.png" alt="Youtube Logo">
+    </div>
+    <div class="navElement flex">
+      <div class="wrap">
+        <div class="search flex">
+          <input type="text" class="searchTerm" placeholder="Search">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="navElement flex">
+      <div class="notification flex">
+        <i id="upload-icon" class="fas fa-upload"></i>
+      </div>
+      <div class="notification flex">
+        <i id="apps-icon" class="material-icons">apps</i>
+      </div>
+      <div class="notification flex">
+        <i id="notification-icon" class="fas fa-bell"></i>
+      </div>
+      <div class="notification flex">
+        <i id="user-icon" class="far fa-user-circle"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="grid-container">
+    <figure class="mainvideo">
+        <iframe src="https://www.youtube.com/embed/lJIrF4YjHfQ" allow="picture-in-picture" allowfullscreen></iframe>
+      <section class="description">
+        <h3 id="videotitle">
+          Embed Videos and Playlists
+        </h3>
+        <section class="small-grid">
+          <h5 class="views">
+            245,123 views • January 2020
+          </h5>
+          <figure class="social flex">
+            <i class="material-icons">thumb_up</i>
+            <span class="social-icon">5.6K</span>
+            <i class="material-icons">thumb_down</i>
+            <span class="social-icon">333</span>
+            <i class="material-icons">share</i>
+            <span class="social-icon">SHARE</span>
+          </figure>
+          <figure class="account">
+            <i id="account_icon" class="material-icons">account_circle</i>
+            <p> <span id="account-name">Youtube Account</span> <br> <span id="account-subscribers">1M subscribers</span> </p>
+          </figure>
+          <figure class="subscribe flex">
+            <button id="subscribe-button">Subscribe</button>
+          </figure>
         </section>
-        <img class="thumbnail" src=icon.png>
-        <img class="thumbnail" src=icon.png>
       </section>
-    </section>
+      <hr>
+        <section class="comments flex">
+          <h4 id="comment-title" class="social-icon">4,378 Comments</h4>
+          <i class="material-icons">sort</i>
+          <p id="sort-by">SORT BY</p>
+        </section>
+        <article class="comments-section">
+          <h5>Comments</h5>
+          <div class="comment flex">
+            <i class="material-icons user-icon">account_circle</i>
+            <section class="side-combo">
+              <h5 class="side-title">Kevin Smith</h5>
+              <p class="side-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga reiciendis iure dolores numquam iste aliquam veritatis!</p>
+              <figure class="like-comment flex">
+                <i class="material-icons size">thumb_up</i>
+                <span class="social-icon">5.6K</span>
+                <i class="material-icons size">thumb_down</i>
+                <span class="social-icon reply-padding">REPLY</span>
+              </figure>
+              <figure class="comment-replies flex">
+                <i class="material-icons drop-down-icon">arrow_drop_down</i> <span>View 23 Replies</span>
+              </figure>
+            </section>
+          </div>
+          <div class="comment flex">
+            <i class="material-icons user-icon">account_circle</i>
+            <section class="side-combo">
+              <h5 class="side-title">John Doe</h5>
+              <p class="side-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga reiciendis iure dolores numquam iste aliquam veritatis!</p>
+              <figure class="like-comment flex">
+                <i class="material-icons size">thumb_up</i>
+                <span class="social-icon">5.6K</span>
+                <i class="material-icons size">thumb_down</i>
+                <span class="social-icon reply-padding">REPLY</span>
+              </figure>
+              <figure class="comment-replies flex">
+                <i class="material-icons drop-down-icon">arrow_drop_down</i> <span>View 23 Replies</span>
+              </figure>
+            </section>
+          </div>
+          <div class="comment flex">
+            <i class="material-icons user-icon">account_circle</i>
+            <section class="side-combo">
+              <h5 class="side-title">Jane Doe</h5>
+              <p class="side-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga reiciendis iure dolores numquam iste aliquam veritatis!</p>
+              <figure class="like-comment flex">
+                <i class="material-icons size">thumb_up</i>
+                <span class="social-icon">5.6K</span>
+                <i class="material-icons size">thumb_down</i>
+                <span class="social-icon reply-padding">REPLY</span>
+              </figure>
+              <figure class="comment-replies flex">
+                <i class="material-icons drop-down-icon">arrow_drop_down</i> <span>View 23 Replies</span>
+              </figure>
+            </section>
+          </div>
+          <div class="comment flex">
+            <i class="material-icons user-icon">account_circle</i>
+            <section class="side-combo">
+              <h5 class="side-title">Sam Smith</h5>
+              <p class="side-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga reiciendis iure dolores numquam iste aliquam veritatis!</p>
+              <figure class="like-comment flex">
+                <i class="material-icons size">thumb_up</i>
+                <span class="social-icon">5.6K</span>
+                <i class="material-icons size">thumb_down</i>
+                <span class="social-icon reply-padding">REPLY</span>
+              </figure>
+              <figure class="comment-replies flex">
+                <i class="material-icons drop-down-icon">arrow_drop_down</i> <span>View 23 Replies</span>
+              </figure>
+            </section>
+          </div>
+      </article>
+    </figure>
 
-  </body>
-  </html>
+    <aside class="sidebar side-flex flex">
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-1.jpg" alt="First video">
+          <section class="side-combo">
+            <h4 class="side-title">Customer Service Sample Call</h4>
+            <p class="side-description">Magellan Solutions</p>
+            <p class="side-description">1,114,767 views • 4 Dec 2018</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-2.jpg" alt="Second video">
+          <section class="side-combo">
+            <h4 class="side-title">Liam Dutton nails pronounciation</h4>
+            <p class="side-description">Channel 4</p>
+            <p class="side-description">32,467,887 views • 9 Sep 2015</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-3.jpg" alt="Third video">
+          <section class="side-combo">
+            <h4 class="side-title">Four Seasons ~ Vivaldi</h4>
+            <p class="side-description">AnAmericanComposer</p>
+            <p class="side-description">217,343,986 views • 30 Jan 2011</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-4.jpg" alt="Fourth video">
+          <section class="side-combo">
+            <h4 class="side-title">What happens when you reply to spam</h4>
+            <p class="side-description">TED</p>
+            <p class="side-description">53,675,487 views • 1 Feb 2016</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-3.jpg" alt="Fifth video">
+          <section class="side-combo">
+            <h4 class="side-title">Four Seasons ~ Vivaldi</h4>
+            <p class="side-description">AnAmericanComposer</p>
+            <p class="side-description">217,343,986 views • 30 Jan 2011</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-4.jpg" alt="Sixth video">
+          <section class="side-combo">
+            <h4 class="side-title">What happens when you reply to spam</h4>
+            <p class="side-description">TED</p>
+            <p class="side-description">53,675,487 views • 1 Feb 2016</p>
+          </section>
+        </figure>
+        <figure class="thumb flex">
+          <img class="thumbnail flex" src="img/thumbnail-1.jpg" alt="Seventh video">
+          <section class="side-combo">
+            <h4 class="side-title">Customer Service Sample Call</h4>
+            <p class="side-description">Magellan Solutions</p>
+            <p class="side-description">1,114,767 views • 4 Dec 2018</p>
+          </section>
+        </figure>
+    </aside>
+</main>
+</body>
+
+</html>
